@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>typing speed game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@400;700&family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@500&family=Source+Serif+Pro&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- form  -->
+    <form class="form">
+      <p>difficulty</p>
+      <select name="select" id="select" class="select">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </form>
+
+    <!-- game container -->
+    <div class="game-container">
+      <h3>speed typer</h3>
+
+      <!-- time remaining, scrore and best score  -->
+      <div class="time-score">
+        <p>time left : <span class="time">10s</span></p>
+        <div class="score">
+          <p>score: <span id="scoreone">0</span></p>
+          <p>highest score: <span class="highest-score">0</span></p>
+        </div>
+      </div>
+      <span>type the following:</span>
+      <h1 class="word">loving</h1>
+
+      <!-- input field to type the word -->
+      <input
+        type="text "
+        placeholder="type the word here"
+        class="input"
+        id="input"
+      />
+      <div class="endgame-container"></div>
+    </div>
+
+    <!-- setting button -->
+    <button class="btn setting-btn">
+      <i class="fa-solid fa-gear"></i>
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
